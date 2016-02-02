@@ -1,0 +1,11 @@
+formLabel
+  = form_for (@link)  do |f|
+    = f.label value: "Type"
+    = f.text_field_tag :type
+    = f.label value: "URL"
+    = f.text_field_tag :url
+    = f.label value: "Language"
+    = f.text_field_tag :language
+    = f.label value "Quality"
+    = f.text_field_tag :quality
+    = f.submit_tag "Send"
